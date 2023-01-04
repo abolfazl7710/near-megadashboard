@@ -14,7 +14,7 @@ st.write("""
  The data used was obtained from shroomDk and Flipsidecrypto.
  All the codes of this web app can be seen in this link (Github). 
  
- https://github.com/abolfazl7710/Terradash
+ https://github.com/abolfazl7710/near-megadashboard
 """
 )
 st.write("""
