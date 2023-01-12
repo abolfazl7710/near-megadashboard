@@ -320,7 +320,7 @@ df8 = querying_pagination(df8_query)
 df81_query="""
 select 
 tx_signer as user,
-sum(stake_amount)/pow(10,24) as unstake_volume_near
+sum(stake_amount)/pow(10,24) as unstake_volume
 from near.core.dim_staking_actions
 where action = 'Unstake'
 group by 1
@@ -473,4 +473,4 @@ with cc1:
 with cc2:
  st.subheader('Top 10 unstakers by volume (Near) of unstake')
  st.caption('Top 10 unstakers by volume (Near) of unstake')
- st.bar_chart(df81, x='user', y = 'unstake_volume_near', width = 400, height = 400)
+ st.bar_chart(df81, x='user', y = 'unstake_volume', width = 400, height = 400)
